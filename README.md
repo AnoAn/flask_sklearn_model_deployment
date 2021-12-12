@@ -1,9 +1,10 @@
 # flask_sklearn_model_deployment
-Simple sklearn LinearSVC model training and deployment with Flask
+Simple sklearn data prep & LinearSVC model training and deployment with Flask
 
 Example training data is downloaded in a datasets folder via the Kaggle API (make sure to install the kaggle package and store your API token in the .json folder; if unsure [read the Kaggle API docs](https://www.kaggle.com/docs/api#getting-started-installation-&-authentication))
 
 Following training, the model & its metadata is stored in the models folder using joblib.
+The model in this case contains also the data preprocessing pipeline implementing tf-idf text vectorization - i.e., When calling .predict() just pass the raw text.
 
 Test the api by running requests.py (in a new terminal) after running the Flask app server.
 
