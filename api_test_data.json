@@ -1,0 +1,5 @@
+{
+    "_comment":"set predict_classes to True to return negative/positive labels instead of 0/1",
+    "input": ["I like Attack on Titan", "The new Star Wars trilogy is awful, hate it"],
+    "predict classes": "True"
+}
